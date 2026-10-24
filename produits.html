@@ -1,0 +1,171 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos coffrets | Memora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">memora</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Nos coffrets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">LA SÉLECTION MEMORA</p>
+            <h1>Nos Box Anniversaire</h1>
+            <p>Choisissez le coffret idéal pour faire plaisir à une personne spéciale.</p>
+        </section>
+
+        <section class="section product-grid">
+
+            <article class="product-card">
+                <img src="images/cadeaux1.jpg" alt="Box anniversaire rose">
+                <h2>Box Anniversaire Douceur</h2>
+                <p>Un joli coffret rose avec des accessoires et des produits de beauté.</p>
+                <p class="price">40 DT</p>
+            </article>
+
+            <article class="product-card">
+                <img src="images/cadeux2.jpg" alt="Box anniversaire élégante">
+                <h2>Box Anniversaire Élégance</h2>
+                <p>Un coffret élégant avec des accessoires et des produits de beauté.</p>
+                <p class="price">70 DT</p>
+            </article>
+
+            <article class="product-card">
+                <img src="images/cadeaux3.jpg" alt="Grande box anniversaire">
+                <h2>Box Anniversaire Premium</h2>
+                <p>Un grand coffret avec plusieurs produits de beauté et accessoires.</p>
+                <p class="price">120 DT</p>
+            </article>
+
+        </section>
+
+        <p class="price-note">
+            Les prix sont indicatifs et peuvent varier selon le coffret choisi.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="index.html">memora</a>
+        <p>Des cadeaux qui font plaisir.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+<section class="products-section">
+    <h2>Nos Box Saint-Valentin</h2>
+    <p class="section-description">
+        Des cadeaux romantiques pour faire plaisir à la personne que vous aimez.
+    </p>
+
+    <div class="products-grid">
+
+        <!-- Box 30 DT -->
+        <article class="product-card">
+            <img src="images/cadeau1.jpg" alt="Box Saint-Valentin Douceur">
+
+            <div class="product-info">
+                <h3>Box Saint-Valentin Douceur</h3>
+                <p>Une petite surprise pleine d'amour et de tendresse.</p>
+                <span class="product-price">30 DT</span>
+            </div>
+        </article>
+
+        <!-- Box 60 DT -->
+        <article class="product-card">
+            <img src="images/cadeau2.jpg" alt="Box Saint-Valentin Élégance">
+
+            <div class="product-info">
+                <h3>Box Saint-Valentin Élégance</h3>
+                <p>Un joli coffret romantique pour un moment spécial.</p>
+                <span class="product-price">60 DT</span>
+            </div>
+        </article>
+
+        <!-- Box 100 DT -->
+        <article class="product-card">
+            <img src="images/cadeau3.jpg" alt="Box Saint-Valentin Premium">
+
+            <div class="product-info">
+                <h3>Box Saint-Valentin Premium</h3>
+                <p>Un coffret raffiné pour rendre cette journée inoubliable.</p>
+                <span class="product-price">100 DT</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="products-section">
+    <h2>Nos Box Cadeau de Réussite</h2>
+    <p class="section-description">
+        Célébrez chaque réussite avec un cadeau spécial.
+    </p>
+
+    <div class="products-grid">
+
+        <article class="product-card">
+            <img src="images/cadau1.jpg" alt="Box Réussite Douceur">
+            <div class="product-info">
+                <h3>Box Réussite Douceur</h3>
+                <p>Un petit cadeau pour féliciter une personne spéciale.</p>
+                <span class="product-price">35 DT</span>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="images/cadau2.jpg" alt="Box Réussite Élégance">
+            <div class="product-info">
+                <h3>Box Réussite Élégance</h3>
+                <p>Un coffret pour célébrer un beau succès.</p>
+                <span class="product-price">45 DT</span>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="images/cadau3.jpg" alt="Box Réussite Premium">
+            <div class="product-info">
+                <h3>Box Réussite Premium</h3>
+                <p>Un cadeau spécial pour une réussite inoubliable.</p>
+                <span class="product-price">55 DT</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<script>
+document.querySelectorAll(".product-card img").forEach(function(photo) {
+    photo.addEventListener("click", function() {
+        const lightbox = document.createElement("div");
+        lightbox.className = "image-lightbox active";
+
+        const grandePhoto = document.createElement("img");
+        grandePhoto.src = photo.src;
+        grandePhoto.alt = photo.alt;
+
+        lightbox.appendChild(grandePhoto);
+        document.body.appendChild(lightbox);
+
+        lightbox.addEventListener("click", function() {
+            lightbox.remove();
+        });
+    });
+});
+</script>
+</body>
+
