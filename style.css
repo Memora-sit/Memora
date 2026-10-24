@@ -1,0 +1,820 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f7;
+    color: #443238;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0dfe3;
+}
+
+.logo {
+    color: #b65f79;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #443238;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #b65f79;
+}
+
+.page-hero {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.eyebrow {
+    color: #b65f79;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.page-hero h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.page-hero > p:last-child {
+    color: #796b70;
+}
+
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #f0dfe3;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(80, 40, 50, 0.06);
+    overflow: hidden;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #fff8f7;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    color: #8f4960;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #796b70;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    color: #b65f79;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.price-note {
+    text-align: center;
+    color: #796b70;
+    font-size: 13px;
+    margin: 25px 15px 40px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f8e9ed;
+    margin-top: 35px;
+}
+
+.footer-logo {
+    font-size: 24px;
+}
+
+.site-footer p {
+    color: #796b70;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-hero h1 {
+        font-size: 27px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
+
+    .product-card h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 190px;
+    }
+}
+```
+```css
+/* PAGE D'ACCUEIL MEMORA */
+
+.home-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 90%;
+    margin: 35px auto 65px;
+    padding: 35px 0;
+}
+
+.hero-content .eyebrow,
+.section-heading .eyebrow,
+.occasion-band .eyebrow,
+.final-cta .eyebrow {
+    color: #b65f79;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 em,
+.section-heading h2 em,
+.occasion-band h2 em {
+    color: #b65f79;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+.hero-text {
+    color: #796b70;
+    max-width: 520px;
+    margin-bottom: 22px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button-primary {
+    background-color: #b65f79;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #984761;
+}
+
+.text-link {
+    color: #8f4960;
+    text-decoration: none;
+}
+
+.hero-note {
+    color: #796b70;
+    font-size: 13px;
+}
+
+.sparkle {
+    color: #b65f79;
+    margin-right: 6px;
+}
+
+.hero-art {
+    min-height: 340px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 48% 48% 20px 20px;
+    background-color: #f8e9ed;
+}
+
+.sun-shape {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #edc6d1;
+}
+
+.gift-card {
+    width: 165px;
+    height: 180px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffaf8;
+    border: 1px solid #e8c5ce;
+    border-radius: 8px;
+    box-shadow: 0 12px 25px rgba(80, 40, 50, 0.12);
+    transform: rotate(-5deg);
+}
+
+.gift-ribbon {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background-color: #b65f79;
+    opacity: 0.9;
+}
+
+.gift-bow {
+    position: absolute;
+    top: 38px;
+    z-index: 2;
+    color: #fffaf8;
+    font-size: 30px;
+}
+
+.gift-brand {
+    position: absolute;
+    bottom: 25px;
+    z-index: 2;
+    color: #8f4960;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.floating {
+    position: absolute;
+    color: #b65f79;
+    z-index: 2;
+}
+
+.flower {
+    top: 45px;
+    left: 20%;
+    font-size: 38px;
+}
+
+.star {
+    top: 75px;
+    right: 18%;
+    font-size: 42px;
+}
+
+.art-caption {
+    position: absolute;
+    right: 15px;
+    bottom: 18px;
+    color: #8f4960;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+}
+
+.intro-section {
+    padding-top: 25px;
+    padding-bottom: 55px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.occasion-band h2,
+.final-cta h2 {
+    font-size: clamp(25px, 3vw, 36px);
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child,
+.final-cta > p:not(.eyebrow) {
+    color: #796b70;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #ffffff;
+    border: 1px solid #f0dfe3;
+    border-radius: 14px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.icon-round {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background-color: #f8e9ed;
+    color: #b65f79;
+    font-size: 24px;
+}
+
+.value-card h3 {
+    color: #8f4960;
+    margin-bottom: 8px;
+}
+
+.value-card p {
+    color: #796b70;
+    font-size: 14px;
+}
+
+.occasion-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 45px 7%;
+    background-color: #f8e9ed;
+}
+
+.occasion-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.occasion-list span {
+    background-color: #ffffff;
+    border: 1px solid #f0dfe3;
+    border-radius: 25px;
+    padding: 9px 14px;
+    color: #8f4960;
+    font-size: 13px;
+}
+
+.final-cta {
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.cta-heart {
+    color: #b65f79;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.final-cta .button {
+    margin-top: 22px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #8f4960;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.site-footer small {
+    color: #796b70;
+    font-size: 12px;
+}
+
+@media (max-width: 750px) {
+    .home-hero {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 15px;
+    }
+
+    .hero-art {
+        min-height: 280px;
+    }
+
+    .value-grid,
+    .occasion-band {
+        grid-template-columns: 1fr;
+    }
+
+    .occasion-band {
+        padding: 35px 7%;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+```
+```css
+/* PAGE CONTACT */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 60px;
+    align-items: start;
+}
+
+.contact-info {
+    padding: 20px 0;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.contact-info h2 em {
+    color: #b65f79;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+.contact-info > p:not(.eyebrow) {
+    color: #796b70;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 22px 0;
+}
+
+.contact-detail > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f8e9ed;
+    color: #b65f79;
+    font-size: 23px;
+}
+
+.contact-detail h3 {
+    color: #8f4960;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.contact-detail p {
+    color: #796b70;
+    font-size: 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #f0dfe3;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(80, 40, 50, 0.06);
+}
+
+.contact-form h2 {
+    color: #8f4960;
+    font-size: 25px;
+}
+
+.form-intro {
+    color: #796b70;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    color: #443238;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8d5dc;
+    border-radius: 8px;
+    background-color: #fffdfd;
+    color: #443238;
+    font: inherit;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #edc6d1;
+    border-color: #b65f79;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.form-message {
+    color: #8f4960;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-info h2 {
+        font-size: 27px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+```
+
+/* Box Saint-Valentin */
+.product-card {
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.product-price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c44569;
+    margin-top: 10px;
+}
+
+/* Box Cadeau de Réussite côte à côte */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.product-card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+.product-info {
+    padding: 12px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.product-info p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.products-section h2 {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto 15px;
+}
+
+.products-section .section-description {
+    text-align: center;
+    margin: 0 auto 25px;
+}
+/* Agrandir les vraies photos des box Memora */
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover !important;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Garder les box côte à côte sur ordinateur */
+.products-grid,
+.product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+@media (max-width: 750px) {
+    .product-card img {
+        height: 240px !important;
+    }
+
+    .products-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .product-card img {
+        height: 220px !important;
+    }
+
+    .products-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ouvrir les photos en grand */
+.image-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(35, 20, 28, 0.88);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: zoom-out;
+}
+
+.image-lightbox.active {
+    display: flex;
+}
+
+.image-lightbox img {
+    max-width: 95%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    cursor: zoom-in;
+}
