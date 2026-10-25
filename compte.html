@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon compte | Memora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">memora<span>♡</span></a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="prouduits.html">Nos produits</a>
+            <a href="propos.html">À propos</a>
+            <a href="compte.html" class="active">Mon compte</a>
+            <a href="panier.html">Panier <span class="cart-count">0</span></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-heading">
+        <div class="container">
+            <p class="eyebrow">BIENVENUE CHEZ MEMORA</p>
+            <h1>Mon compte ♡</h1>
+            <p>Retrouvez votre espace personnel et suivez vos commandes.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container account-layout">
+
+            <div class="account-form">
+                <h2>Créer un compte</h2>
+                <p>Inscrivez-vous pour retrouver votre espace personnel.</p>
+
+                <form id="register-form">
+                    <label for="register-name">Nom complet</label>
+                    <input type="text" id="register-name"
+                           autocomplete="name" required>
+
+                    <label for="register-email">Adresse e-mail</label>
+                    <input type="email" id="register-email"
+                           autocomplete="email" required>
+
+                    <label for="register-password">Mot de passe</label>
+                    <input type="password" id="register-password"
+                           autocomplete="new-password"
+                           minlength="8" required>
+
+                    <button type="submit" class="btn">
+                        Créer mon compte
+                    </button>
+                </form>
+            </div>
+
+            <div class="account-form">
+                <h2>Déjà membre ?</h2>
+                <p>Connectez-vous pour accéder à votre compte.</p>
+
+                <form id="login-form">
+                    <label for="login-email">Adresse e-mail</label>
+                    <input type="email" id="login-email"
+                           autocomplete="email" required>
+
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password"
+                           autocomplete="current-password" required>
+
+                    <button type="submit" class="btn">
+                        Se connecter
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <p id="account-message" class="form-message"
+               role="status" aria-live="polite"></p>
+
+            <section id="account-dashboard" class="account-form"
+                     hidden>
+                <h2>Mon espace personnel</h2>
+                <p id="account-welcome"></p>
+
+                <h3>Mes commandes</h3>
+                <div id="my-orders">
+                    <p>Les commandes enregistrées apparaîtront ici.</p>
+                </div>
+
+                <button id="logout-button" type="button"
+                        class="btn btn-outline">
+                    Se déconnecter
+                </button>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <a href="index.html" class="logo">memora<span>♡</span></a>
+        <p>Fait avec amour à Sousse.</p>
+        <p>© 2026 Memora — Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!--
+  IMPORTANT :
+  Le formulaire doit être connecté à Supabase avant utilisation.
+  Aucun mot de passe n'est enregistré dans localStorage.
+-->
+<script>
+(() => {
+    const message = document.getElementById("account-message");
+    const registerForm = document.getElementById("register-form");
+    const loginForm = document.getElementById("login-form");
+    const dashboard = document.getElementById("account-dashboard");
+    const welcome = document.getElementById("account-welcome");
+    const logoutButton = document.getElementById("logout-button");
+
+    function showMessage(text) {
+        message.textContent = text;
+        message.classList.add("show");
+    }
+
+    // Ne pas simuler un compte réel tant que Supabase n'est pas connecté.
+    registerForm.addEventListener("submit", event => {
+        event.preventDefault();
+        showMessage(
+            "La création de compte sera disponible après la connexion sécurisée à Supabase."
+        );
+    });
+
+    loginForm.addEventListener("submit", event => {
+        event.preventDefault();
+        showMessage(
+            "La connexion sera disponible après la configuration de Supabase."
+        );
+    });
+
+    logoutButton.addEventListener("click", () => {
+        dashboard.hidden = true;
+        showMessage("Vous êtes déconnecté(e).");
+    });
+})();
+</script>
+
+</body>
+</html>

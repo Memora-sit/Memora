@@ -1,133 +1,295 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Memora : des coffrets cadeaux personnalisés selon vos goûts et votre budget à Sousse.">
-    <title>Memora | Des cadeaux qui vous ressemblent</title>
+    <meta name="description" content="Memora, des cadeaux personnalisés préparés avec amour à Sousse. Choisissez vos produits et composez votre sélection selon vos envies.">
+    <title>Memora ♡ | Le plaisir d'offrir</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <a class="logo" href="index.html">memora<span>♡</span></a>
+<!-- NAVIGATION -->
+<header class="site-header">
+    <div class="container header-inner">
 
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <a href="index.html" class="logo">
+            memora<span>♡</span>
+        </a>
 
-        <nav class="nav-links" aria-label="Menu principal">
-            <a href="index.html">Accueil</a>
-            <a href="produits.html">Nos coffrets</a>
-            <a href="contact.html">Contact</a>
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="prouduits.html">Nos produits</a>
+            <a href="propos.html">À propos</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="panier.html">
+                Panier <span class="cart-count">0</span>
+            </a>
         </nav>
-    </header>
 
-    <main>
+    </div>
+</header>
 
-        <section class="home-hero">
-            <div class="hero-content">
-                <p class="eyebrow">LE PLAISIR D’OFFRIR, AUTREMENT</p>
+<main>
 
-                <h1>Un cadeau unique.<br><em>Une émotion inoubliable.</em></h1>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
 
-                <p class="hero-text">
-                    Chez Memora, imaginez un coffret personnalisé selon les goûts
-                    de la personne et votre budget. Pour les petites attentions
-                    comme les grands moments.
+            <div class="hero-text">
+                <p class="eyebrow">FAIT AVEC AMOUR À SOUSSE</p>
+
+                <h1>
+                    LE PLAISIR D'OFFRIR,<br>
+                    <span>AUTREMENT.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Un cadeau unique. Une émotion inoubliable.
+                    Découvrez notre univers et créez une sélection
+                    qui vous ressemble, selon vos goûts et votre budget.
                 </p>
 
-                <div class="hero-actions">
-                    <a class="button button-primary" href="produits.html">Découvrir les coffrets</a>
-                    <a class="text-link" href="contact.html">Parlons de votre idée ↗</a>
+                <div class="hero-buttons">
+                    <a href="prouduits.html" class="btn">
+                        Découvrir nos produits ♡
+                    </a>
+
+                    <a href="propos.html" class="btn btn-outline">
+                        Notre histoire
+                    </a>
                 </div>
 
-                <div class="hero-note">
-                    <span class="sparkle">✦</span>
-                    Pensé pour vous, préparé avec soin à Sousse.
+                <div class="hero-features">
+                    <span>♡ Des idées originales</span>
+                    <span>♡ Selon votre budget</span>
+                    <span>♡ Préparé avec soin</span>
                 </div>
             </div>
 
-            <div class="hero-art">
-                <div class="sun-shape"></div>
-                <div class="gift-card">
-                    <div class="gift-ribbon"></div>
-                    <div class="gift-bow">♡</div>
-                    <span class="gift-brand">avec amour</span>
+            <div class="hero-image">
+                <img src="images/ph1.jpg"
+                     alt="Une idée de cadeau préparée avec amour"
+                     onerror="this.onerror=null;this.src='images/poh1.jpg';">
+                <div class="hero-image-note">
+                    <span>Un petit cadeau...</span>
+                    <strong>Un grand sourire ♡</strong>
                 </div>
-                <span class="floating flower">✿</span>
-                <span class="floating star">✧</span>
-                <div class="art-caption">Un petit coffret,<br>un grand sourire.</div>
             </div>
-        </section>
 
-        <section class="section intro-section">
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="section">
+        <div class="container intro-section">
+
+            <p class="eyebrow">BIENVENUE CHEZ MEMORA</p>
+
+            <h2>Chaque cadeau raconte une histoire.</h2>
+
+            <p>
+                Chez Memora, nous croyons que les plus beaux cadeaux
+                sont ceux qui viennent du cœur. Découvrez nos bougies,
+                accessoires, sacs, peluches et porte-clés pour faire
+                plaisir à ceux que vous aimez.
+            </p>
+
+            <a href="prouduits.html" class="text-link">
+                Explorer la collection →
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section section-soft">
+        <div class="container">
+
             <div class="section-heading">
-                <p class="eyebrow">L’ESPRIT MEMORA</p>
-                <h2>Votre attention, <em>notre inspiration.</em></h2>
-                <p>Parce que chaque personne est différente, votre cadeau devrait l’être aussi.</p>
+                <p class="eyebrow">NOTRE UNIVERS</p>
+                <h2>Découvrez nos catégories</h2>
+                <p>
+                    Trouvez le petit détail qui fera toute la différence.
+                </p>
             </div>
 
-            <div class="value-grid">
-                <article class="value-card">
-                    <span class="icon-round">♡</span>
-                    <h3>Personnalisé</h3>
-                    <p>Un coffret imaginé selon les goûts et les envies de la personne à gâter.</p>
+            <div class="category-grid">
+
+                <a href="prouduits.html#bougies"
+                   class="category-card">
+                    <img src="images/poh1.jpg"
+                         alt="Bougies décoratives"
+                         loading="lazy">
+                    <div class="category-card-content">
+                        <h3>Bougies</h3>
+                        <span>Douceur et ambiance ♡</span>
+                    </div>
+                </a>
+
+                <a href="prouduits.html#accessoires"
+                   class="category-card">
+                    <img src="images/poh5.jpg"
+                         alt="Accessoires cadeaux"
+                         loading="lazy">
+                    <div class="category-card-content">
+                        <h3>Accessoires</h3>
+                        <span>Des détails pleins de charme</span>
+                    </div>
+                </a>
+
+                <a href="prouduits.html#sautas"
+                   class="category-card">
+                    <img src="images/poh11.jpg"
+                         alt="Sacs et accessoires"
+                         loading="lazy">
+                    <div class="category-card-content">
+                        <h3>Sacs</h3>
+                        <span>Le style au quotidien</span>
+                    </div>
+                </a>
+
+                <a href="prouduits.html#peluches"
+                   class="category-card">
+                    <img src="images/poh15.jpg"
+                         alt="Peluches douces"
+                         loading="lazy">
+                    <div class="category-card-content">
+                        <h3>Peluches</h3>
+                        <span>Un câlin tout doux</span>
+                    </div>
+                </a>
+
+                <a href="prouduits.html#porte-cles"
+                   class="category-card">
+                    <img src="images/poh18.jpg"
+                         alt="Porte-clés originaux"
+                         loading="lazy">
+                    <div class="category-card-content">
+                        <h3>Porte-clés</h3>
+                        <span>Un souvenir à emporter</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="center-button">
+                <a href="prouduits.html" class="btn">
+                    Voir tous les produits
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- POURQUOI MEMORA -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">POURQUOI MEMORA ?</p>
+                <h2>Le cadeau qui vous ressemble</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">♡</div>
+                    <h3>Votre choix</h3>
+                    <p>
+                        Sélectionnez vos produits préférés et choisissez
+                        les couleurs disponibles.
+                    </p>
                 </article>
 
-                <article class="value-card">
-                    <span class="icon-round">✧</span>
-                    <h3>Selon votre budget</h3>
-                    <p>Vous choisissez votre budget, puis nous réfléchissons ensemble aux possibilités.</p>
+                <article class="benefit-card">
+                    <div class="benefit-icon">✿</div>
+                    <h3>Votre budget</h3>
+                    <p>
+                        Composez votre sélection selon vos envies et
+                        le budget que vous souhaitez respecter.
+                    </p>
                 </article>
 
-                <article class="value-card">
-                    <span class="icon-round">⌁</span>
-                    <h3>Simple et pratique</h3>
-                    <p>Expliquez-nous votre idée en ligne et gagnez du temps dans votre recherche.</p>
+                <article class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Pour toutes les occasions</h3>
+                    <p>
+                        Un anniversaire, une surprise ou simplement
+                        l'envie de faire plaisir : chaque attention compte.
+                    </p>
                 </article>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="occasion-band">
-            <div>
-                <p class="eyebrow">POUR CHAQUE MOMENT</p>
-                <h2>Les belles occasions méritent<br><em>une attention spéciale.</em></h2>
-            </div>
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <div class="container cta-content">
 
-            <div class="occasion-list">
-                <span>Anniversaire</span>
-                <span>Réussite</span>
-                <span>Pour un couple</span>
-                <span>Pour un ami</span>
-                <span>Juste pour faire plaisir</span>
-            </div>
-        </section>
+            <p class="eyebrow">UNE ATTENTION QUI VIENT DU CŒUR</p>
 
-        <section class="section final-cta">
-            <div class="cta-heart">♡</div>
-            <p class="eyebrow">VOTRE IDÉE COMMENCE ICI</p>
-            <h2>On imagine votre coffret ?</h2>
-            <p>Racontez-nous l’occasion, les goûts de la personne et le budget prévu.</p>
-            <a class="button button-primary" href="contact.html">Personnaliser mon cadeau</a>
-        </section>
+            <h2>Prête à trouver votre prochain coup de cœur ?</h2>
 
-    </main>
+            <p>
+                Parcourez nos produits et imaginez votre propre sélection.
+            </p>
 
-    <footer class="site-footer">
-        <a class="logo footer-logo" href="index.html">memora<span>♡</span></a>
-        <p>Des cadeaux pensés avec le cœur, à Sousse.</p>
+            <a href="prouduits.html" class="btn">
+                Je découvre ♡
+            </a>
 
-        <div class="footer-links">
-            <a href="produits.html">Nos coffrets</a>
-            <a href="a-propos.html">À propos</a>
-            <a href="contact.html">Contact</a>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+                memora<span>♡</span>
+            </a>
+            <p>Des cadeaux choisis avec le cœur.</p>
+            <p>Fait avec amour à Sousse.</p>
         </div>
 
-        <small>© 2026 Memora — Site vitrine de présentation.</small>
-    </footer>
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <a href="index.html">Accueil</a>
+            <a href="prouduits.html">Nos produits</a>
+            <a href="propos.html">À propos</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="panier.html">Mon panier</a>
+        </div>
 
+        <div class="footer-contact">
+            <h3>Memora ♡</h3>
+            <p>Une petite attention, un grand bonheur.</p>
+            <p>Préparé avec soin à Sousse, Tunisie.</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Memora. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
 </body>
 </html>
-```

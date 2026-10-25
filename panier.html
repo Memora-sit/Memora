@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#782b48">
+    <title>Mon panier | Memora ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="index.html">memora<span>♡</span></a>
+        <button class="menu-toggle" type="button"
+                aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="prouduits.html">Nos produits</a>
+            <a href="propos.html">À propos</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="panier.html" class="active">Panier ♡ <span class="cart-count">0</span></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-heading">
+        <p class="eyebrow">VOTRE SÉLECTION MEMORA</p>
+        <h1>Mon panier ♡</h1>
+        <p>Encore quelques étapes avant de faire plaisir.</p>
+    </section>
+
+    <section class="page-content">
+        <div class="container cart-layout">
+
+            <div>
+                <div id="cart-items" class="cart-items">
+                    <p class="empty-message">Chargement de votre panier...</p>
+                </div>
+
+                <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+                    <a href="prouduits.html" class="btn btn-outline">Continuer mes achats</a>
+                    <button id="clear-cart" class="btn btn-outline" type="button">
+                        Vider le panier
+                    </button>
+                </div>
+            </div>
+
+            <aside class="cart-summary">
+                <h2>Résumé de la commande</h2>
+
+                <div class="cart-line">
+                    <span>Sous-total</span>
+                    <strong id="cart-subtotal">0 DT</strong>
+                </div>
+
+                <div class="cart-line">
+                    <span>Livraison</span>
+                    <strong id="cart-delivery">—</strong>
+                </div>
+
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cart-total">0 DT</strong>
+                </div>
+
+                <p style="font-size:12px;color:var(--muted);margin-bottom:16px;">
+                    Les frais de livraison affichés sont de 7 DT.
+                    Le montant final doit être confirmé selon votre zone de livraison.
+                </p>
+
+                <a href="#delivery-form" class="btn" style="width:100%;">
+                    Passer à la livraison ♡
+                </a>
+            </aside>
+        </div>
+    </section>
+
+    <section class="section section-soft" id="delivery-form">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Où livrer votre commande ?</h2>
+                <p>Complétez vos coordonnées pour préparer votre demande de commande.</p>
+            </div>
+
+            <form id="delivery-order-form" class="form-container">
+                <div class="form-group">
+                    <label for="customer-name">Nom et prénom *</label>
+                    <input id="customer-name" name="customerName"
+                           type="text" autocomplete="name" required
+                           placeholder="Votre nom complet">
+                </div>
+
+<div class="form-group">
+    <label for="customer-email">Adresse e-mail *</label>
+    <input id="customer-email" name="customerEmail"
+           type="email" autocomplete="email" required
+           placeholder="votre@email.com">
+</div>
+
+
+<div class="form-group">
+    <label for="customer-phone">Numéro de téléphone *</label>
+    <input id="customer-phone" name="customerPhone"
+           type="tel" autocomplete="tel" required
+           placeholder="Ex. : 20 000 000"
+           pattern="[0-9 +()-]{8,20}">
+</div>
+
+
+                <div class="form-group">
+                    <label for="customer-city">Ville *</label>
+                    <input id="customer-city" name="customerCity"
+                           type="text" autocomplete="address-level2" required
+                           placeholder="Ex. : Sousse">
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-address">Adresse complète *</label>
+                    <textarea id="customer-address" name="customerAddress"
+                              autocomplete="street-address" required
+                              placeholder="Rue, quartier, numéro de maison..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-note">Remarque (facultatif)</label>
+                    <textarea id="customer-note" name="customerNote"
+                              placeholder="Précisions pour la livraison..."></textarea>
+                </div>
+
+                <p style="font-size:13px;color:var(--muted);margin-bottom:18px;">
+                    En envoyant ce formulaire, vous transmettez les informations
+                    nécessaires au traitement de votre demande.
+                </p>
+
+                <button class="btn" type="submit" id="checkout-button">
+                    Confirmer ma demande ♡
+                </button>
+
+                <p id="order-message" class="form-message" role="status"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="logo" href="index.html">memora<span>♡</span></a>
+                <p>Des cadeaux choisis avec amour, préparés à Sousse.</p>
+            </div>
+            <div class="footer-links">
+                <strong>Navigation</strong>
+                <a href="index.html">Accueil</a>
+                <a href="prouduits.html">Nos produits</a>
+                <a href="propos.html">À propos</a>
+                <a href="compte.html">Mon compte</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Memora ♡ — Fait avec amour à Sousse.</div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+

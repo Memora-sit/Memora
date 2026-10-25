@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#782b48">
+    <meta name="description" content="Découvrez les bougies, accessoires, peluches et porte-clés Memora. Des petits cadeaux choisis avec amour à Sousse.">
+    <title>Nos produits | Memora ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="index.html">memora<span>♡</span></a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="prouduits.html" class="active">Nos produits</a>
+            <a href="propos.html">À propos</a>
+            <a href="compte.html">Mon compte</a>
+            <a href="panier.html">Panier ♡ <span class="cart-count">0</span></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-heading">
+        <p class="eyebrow">FAIT AVEC AMOUR À SOUSSE</p>
+        <h1>Nos petites merveilles ♡</h1>
+        <p>Des cadeaux délicats pour faire plaisir et créer de beaux souvenirs.</p>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Trouvez votre coup de cœur</h2>
+                <p>Choisissez vos articles préférés, sélectionnez leurs couleurs et composez un cadeau qui vous ressemble.</p>
+            </div>
+
+            <div class="filters" aria-label="Filtrer les produits">
+                <button type="button" class="filter-btn active" data-filter="all">Tout</button>
+                <button type="button" class="filter-btn" data-filter="bougies">Bougies</button>
+                <button type="button" class="filter-btn" data-filter="accessoires">Accessoires</button>
+                <button type="button" class="filter-btn" data-filter="sautas">Sautas</button>
+                <button type="button" class="filter-btn" data-filter="peluches">Peluches</button>
+                <button type="button" class="filter-btn" data-filter="porte-cles">Porte-clés</button>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- BOUGIES -->
+                <article class="product-card" data-category="bougies">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la bougie Éclat">
+                        <img src="images/poh1.jpg" alt="Bougie décorative Éclat" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Bougies</p>
+                        <h3 class="product-name">Éclat de douceur</h3>
+                        <p class="product-description">Une touche délicate pour créer une ambiance chaleureuse.</p>
+                        <p class="product-price">12 DT</p>
+                        <label class="color-label" for="color-poh1">Couleur :</label>
+                        <select id="color-poh1" class="color-select">
+                            <option value="Bleu">Bleu</option>
+                            <option value="Violet">Violet</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Vert">Vert</option>
+                            <option value="Blanc">Blanc</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bougies">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la bougie Nature">
+                        <img src="images/poh2.jpg" alt="Bougie décorative Nature" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Bougies</p>
+                        <h3 class="product-name">Douceur naturelle</h3>
+                        <p class="product-description">Un petit détail élégant pour embellir votre espace.</p>
+                        <p class="product-price">5 DT</p>
+                        <label class="color-label" for="color-poh2">Couleur :</label>
+                        <select id="color-poh2" class="color-select">
+                            <option value="Beige">Beige</option>
+                            <option value="Blanc">Blanc</option>
+                            <option value="Marron">Marron</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bougies">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la bougie Fleur">
+                        <img src="images/poh3.jpg" alt="Bougie décorative Fleur" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Bougies</p>
+                        <h3 class="product-name">Fleur de tendresse</h3>
+                        <p class="product-description">Une bougie raffinée pour une attention pleine de charme.</p>
+                        <p class="product-price">15 DT</p>
+                        <label class="color-label" for="color-poh3">Couleur :</label>
+                        <select id="color-poh3" class="color-select">
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bougies">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la bougie Charme">
+                        <img src="images/poh4.jpg" alt="Bougie décorative Charme" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Bougies</p>
+                        <h3 class="product-name">Charme pastel</h3>
+                        <p class="product-description">Une décoration douce qui ajoute une jolie note à votre intérieur.</p>
+                        <p class="product-price">14 DT</p>
+                        <label class="color-label" for="color-poh4">Couleur :</label>
+                        <select id="color-poh4" class="color-select">
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Bleu">Bleu</option>
+                            <option value="Violet">Violet</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <!-- ACCESSOIRES -->
+                <article class="product-card" data-category="accessoires">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de l'accessoire Ruban">
+                        <img src="images/poh5.jpg" alt="Accessoire Ruban" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3 class="product-name">Ruban d'amour</h3>
+                        <p class="product-description">Un accessoire délicat pour compléter votre cadeau.</p>
+                        <p class="product-price">15 DT</p>
+                        <label class="color-label" for="color-poh5">Couleur :</label>
+                        <select id="color-poh5" class="color-select">
+                            <option value="Rouge">Rouge</option>
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Violet">Violet</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="accessoires">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de l'accessoire Élégance">
+                        <img src="images/poh6.jpg" alt="Accessoire Élégance" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3 class="product-name">Élégance rosée</h3>
+                        <p class="product-description">Une petite merveille pour offrir une touche d'élégance.</p>
+                        <p class="product-price">25 DT</p>
+                        <label class="color-label" for="color-poh6">Couleur :</label>
+                        <select id="color-poh6" class="color-select">
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Violet">Violet</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="accessoires">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de l'accessoire Classique">
+                        <img src="images/poh7.jpg" alt="Accessoire Classique" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3 class="product-name">Charme classique</h3>
+                        <p class="product-description">Un style intemporel pour une attention simple et chic.</p>
+                        <p class="product-price">15 DT</p>
+                        <label class="color-label" for="color-poh7">Couleur :</label>
+                        <select id="color-poh7" class="color-select">
+                            <option value="Noir">Noir</option>
+                            <option value="Blanc">Blanc</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="accessoires">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de l'accessoire Pétale">
+                        <img src="images/poh8.jpg" alt="Accessoire Pétale" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3 class="product-name">Pétale délicat</h3>
+                        <p class="product-description">Une jolie idée pour personnaliser un coffret à votre goût.</p>
+                        <p class="product-price">19,9 DT</p>
+                        <label class="color-label" for="color-poh8">Couleur :</label>
+                        <select id="color-poh8" class="color-select">
+                            <option value="Rose">Rose</option>
+                            <option value="Blanc">Blanc</option>
+                            <option value="Violet">Violet</option>
+                            <option value="Bleu">Bleu</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="accessoires">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de l'accessoire Essentiel">
+                        <img src="images/poh9.jpg" alt="Accessoire Essentiel" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3 class="product-name">Petit essentiel</h3>
+                        <p class="product-description">Un petit plaisir à ajouter à votre sélection Memora.</p>
+                        <p class="product-price">5 DT</p>
+                        <label class="color-label" for="color-poh9">Couleur :</label>
+                        <select id="color-poh9" class="color-select">
+                            <option value="Noir">Noir</option>
+                            <option value="Beige">Beige</option>
+                            <option value="Marron">Marron</option>
+                            <option value="Gris">Gris</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <!-- SAUTAS -->
+                <article class="product-card" data-category="sautas">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de Sauta Douce">
+                        <img src="images/poh11.jpg" alt="Sauta Douce" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Sautas</p>
+                        <h3 class="product-name">Douce allure</h3>
+                        <p class="product-description">Un choix plein de charme pour faire plaisir à une personne spéciale.</p>
+                        <p class="product-price">35 DT</p>
+                        <label class="color-label" for="color-poh11">Couleur :</label>
+                        <select id="color-poh11" class="color-select">
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Noir">Noir</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sautas">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de Sauta Horizon">
+                        <img src="images/poh12.jpg" alt="Sauta Horizon" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Sautas</p>
+                        <h3 class="product-name">Horizon coloré</h3>
+                        <p class="product-description">Un cadeau original qui associe douceur et personnalité.</p>
+                        <p class="product-price">29,9 DT</p>
+                        <label class="color-label" for="color-poh12">Couleur :</label>
+                        <select id="color-poh12" class="color-select">
+                            <option value="Bleu">Bleu</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Rouge">Rouge</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sautas">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de Sauta Passion">
+                        <img src="images/poh13.jpg" alt="Sauta Passion" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Sautas</p>
+                        <h3 class="product-name">Petite passion</h3>
+                        <p class="product-description">Une jolie attention pour accompagner vos moments précieux.</p>
+                        <p class="product-price">25 DT</p>
+                        <label class="color-label" for="color-poh13">Couleur :</label>
+                        <select id="color-poh13" class="color-select">
+                            <option value="Rose">Rose</option>
+                            <option value="Rouge">Rouge</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sautas">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de Sauta Nature">
+                        <img src="images/poh14.jpg" alt="Sauta Nature" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Sautas</p>
+                        <h3 class="product-name">Esprit nature</h3>
+                        <p class="product-description">Des tons naturels pour un cadeau qui a du caractère.</p>
+                        <p class="product-price">22 DT</p>
+                        <label class="color-label" for="color-poh14">Couleur :</label>
+                        <select id="color-poh14" class="color-select">
+                            <option value="Vert">Vert</option>
+                            <option value="Gris">Gris</option>
+                            <option value="Marron">Marron</option>
+                            <option value="Beige">Beige</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <!-- PELUCHES -->
+                <article class="product-card" data-category="peluches">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la peluche Câlin">
+                        <img src="images/poh15.jpg" alt="Peluche Câlin" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Peluches</p>
+                        <h3 class="product-name">Petit câlin</h3>
+                        <p class="product-description">Une peluche toute douce pour offrir un peu de tendresse.</p>
+                        <p class="product-price">12 DT</p>
+                        <label class="color-label" for="color-poh15">Couleur :</label>
+                        <select id="color-poh15" class="color-select">
+                            <option value="Beige">Beige</option>
+                            <option value="Marron">Marron</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="peluches">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la peluche Tendresse">
+                        <img src="images/poh16.jpg" alt="Peluche Tendresse" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Peluches</p>
+                        <h3 class="product-name">Nuage de tendresse</h3>
+                        <p class="product-description">Un compagnon adorable pour rendre un cadeau inoubliable.</p>
+                        <p class="product-price">29,9 DT</p>
+                        <label class="color-label" for="color-poh16">Couleur :</label>
+                        <select id="color-poh16" class="color-select">
+                            <option value="Beige">Beige</option>
+                            <option value="Marron">Marron</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="peluches">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo de la peluche Rêve">
+                        <img src="images/poh17.jpg" alt="Peluche Rêve" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Peluches</p>
+                        <h3 class="product-name">Doux rêve</h3>
+                        <p class="product-description">Une surprise pleine de douceur pour les petits et les grands.</p>
+                        <p class="product-price">28 DT</p>
+                        <label class="color-label" for="color-poh17">Couleur :</label>
+                        <select id="color-poh17" class="color-select">
+                            <option value="Bleu">Bleu</option>
+                            <option value="Beige">Beige</option>
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <!-- PORTE-CLÉS -->
+                <article class="product-card" data-category="porte-cles">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo du porte-clés Cœur">
+                        <img src="images/poh18.jpg" alt="Porte-clés Cœur" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Porte-clés</p>
+                        <h3 class="product-name">Cœur précieux</h3>
+                        <p class="product-description">Un petit souvenir à emporter partout avec soi.</p>
+                        <p class="product-price">7 DT</p>
+                        <label class="color-label" for="color-poh18">Couleur :</label>
+                        <select id="color-poh18" class="color-select">
+                            <option value="Rouge">Rouge</option>
+                            <option value="Rose">Rose</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="porte-cles">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo du porte-clés Coloré">
+                        <img src="images/poh19.jpg" alt="Porte-clés Coloré" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Porte-clés</p>
+                        <h3 class="product-name">Petit bonheur</h3>
+                        <p class="product-description">Une attention adorable pour faire sourire quelqu'un.</p>
+                        <p class="product-price">9,9 DT</p>
+                        <label class="color-label" for="color-poh19">Couleur :</label>
+                        <select id="color-poh19" class="color-select">
+                            <option value="Bleu">Bleu</option>
+                            <option value="Rouge">Rouge</option>
+                            <option value="Rose">Rose</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="porte-cles">
+                    <button class="product-image-button" type="button" aria-label="Agrandir la photo du porte-clés Mini">
+                        <img src="images/poh20.jpg" alt="Porte-clés Mini" loading="lazy">
+                    </button>
+                    <div class="product-info">
+                        <p class="product-category">Porte-clés</p>
+                        <h3 class="product-name">Mini souvenir</h3>
+                        <p class="product-description">Un petit cadeau à petit prix, choisi avec amour.</p>
+                        <p class="product-price">5 DT</p>
+                        <label class="color-label" for="color-poh20">Couleur :</label>
+                        <select id="color-poh20" class="color-select">
+                            <option value="Blanc">Blanc</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Rouge">Rouge</option>
+                            <option value="Bleu">Bleu</option>
+                        </select>
+                        <button class="btn add-to-cart" type="button">Ajouter au panier ♡</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Fermer la photo agrandie">×</button>
+    <img src="" alt="Photo agrandie du produit">
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="logo" href="index.html">memora<span>♡</span></a>
+                <p>Des cadeaux personnalisés, préparés avec amour à Sousse, pour rendre chaque occasion spéciale.</p>
+            </div>
+
+            <div class="footer-links">
+                <strong>Navigation</strong>
+                <a href="index.html">Accueil</a>
+                <a href="prouduits.html">Nos produits</a>
+                <a href="propos.html">À propos</a>
+                <a href="compte.html">Mon compte</a>
+                <a href="panier.html">Mon panier</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Memora ♡ — Fait avec amour à Sousse.
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="script.js"></script>
+
+<script>
+async function testerSupabase() {
+    const { data, error } = await supabaseClient
+        .from("products")
+        .select("id, name, price, stock");
+
+    if (error) {
+        console.error("Erreur Supabase :", error.message);
+        return;
+    }
+
+    document.querySelectorAll(".product-card").forEach(card => {
+        const image = card.querySelector("img");
+        
+const match = image.getAttribute("src").match(/poh(\d+)\.jpg/i);
+
+
+        if (!match) return;
+
+        const nomProduit = "Poh" + match[1];
+        const produit = data.find(p =>
+            p.name.toLowerCase() === nomProduit.toLowerCase()
+        );
+
+        if (produit) {    
+            card.dataset.productId = produit.id;
+    card.querySelector(".product-price").textContent =
+        Number(produit.price) + " DT";
+
+    let stockElement = card.querySelector(".product-stock");
+
+    if (!stockElement) {
+        stockElement = document.createElement("p");
+        stockElement.className = "product-stock";
+        card.querySelector(".product-price").after(stockElement);
+    }
+
+    stockElement.textContent = Number(produit.stock) > 0
+        ? "Disponible : " + produit.stock + " pièces"
+        : "Rupture de stock";
+}
+    });
+
+    console.log("Prix mis à jour depuis Supabase !");
+}
+
+testerSupabase();
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const { data, error } = await supabaseClient
+        .from("products")
+        .select("id, name, price, stock");
+
+    if (error) {
+        console.error("Erreur Supabase :", error.message);
+        return;
+    }
+
+    document.querySelectorAll(".product-card").forEach(card => {
+        const image = card.querySelector("img");
+        if (!image) return;
+
+        const match = image.getAttribute("src").match(/poh(\d+)\.jpg/i);
+        if (!match) return;
+
+        const productName = "Poh" + match[1];
+        const product = data.find(p =>
+            p.name.toLowerCase() === productName.toLowerCase()
+        );
+
+        if (!product) {
+            console.warn("Produit introuvable :", productName);
+            return;
+        }
+
+        card.dataset.productId = product.id;
+
+        const price = card.querySelector(".product-price");
+        if (price) price.textContent = product.price + " DT";
+    });
+
+    console.log("Produits chargés :", data.length);
+});
+</script>
+</body>
+</html>
